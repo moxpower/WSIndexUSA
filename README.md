@@ -2,4 +2,4 @@
 
 WS Index for USA with Dropdown menu
 
--Random data creation with pandas
+Random data creation with pandas
