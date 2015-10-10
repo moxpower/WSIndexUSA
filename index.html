@@ -49,14 +49,30 @@ body {
 }
 
 #copyright {
-    position: absolute;
+    position: relative;
     font-size: 1.0rem;
     left: 20px;
-    bottom: -200px;
+    bottom: 20px;
     color: rgba(192,192,192,1);;
 }
 
 </style>
+
+
+<div class="the_header">
+    <div class="the_header_text container">
+      <h1>Choropleth</h1>
+<img src="choropleth061-625x396.png" alt="choropleth" style="width:80%;height:80%;" vspace="50">
+
+<div class="the_header">
+    <div class="the_header_text container">
+      <h1>Density map</h1>
+<img src="london_plaque_density.png" alt="london" style="width:80%;height:80%;">
+
+<div class="the_header">
+    <div class="the_header_text container">
+      <h1>Water stress polygons</h1>
+<img src="cellpoly.png" alt="grid" style="width:80%;height:80%;">
 
 <div class="the_header">
     <div class="the_header_text container">
@@ -69,11 +85,16 @@ body {
 <div id="tooltip-container"></div>
 
 <div id="canvas-svg"></div>
-
+<br>
 
 
 <div id="copyright" color="red">
         <p>made with ♥ by Maximilian Kohl</p>
+
+
+
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
@@ -89,7 +110,7 @@ d3.csv("wsindex.csv", function(err, data) {
 
   var COLOR_COUNTS = 9;
   
-  var SCALE = 0.7;
+  var SCALE = 1;
   
   function Interpolate(start, end, steps, count) {
       var s = start,
