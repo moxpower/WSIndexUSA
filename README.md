@@ -1,5 +1,5 @@
 # WSIndexUSA
 
-WS Index for USA
--Dropdown
--Pandas data creation
+WS Index for USA with Dropdown menu
+
+-Random data creation with pandas
